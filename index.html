@@ -3,108 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musha_King - Gaming Hub</title>
+    <title>Improved Index</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
-            color: #e0e0e0;
-            font-family: 'Arial', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
             padding: 20px;
         }
-        
-        .container {
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-            background: rgba(26, 26, 46, 0.8);
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 255, 136, 0.1);
-            border: 2px solid rgba(0, 255, 136, 0.2);
-        }
-        
-        .logo {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 30px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #00ff88;
-            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            color: #00ff88;
-            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-        }
-        
-        .tagline {
-            font-size: 1.1em;
-            color: #888;
-            margin-bottom: 40px;
-            font-style: italic;
-        }
-        
-        .channels {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .channel-link {
-            padding: 15px 30px;
-            font-size: 1.1em;
-            border: 2px solid #00ff88;
-            background: rgba(0, 255, 136, 0.1);
-            color: #00ff88;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
+        .error {
+            color: red;
             font-weight: bold;
-            cursor: pointer;
-        }
-        
-        .channel-link:hover {
-            background: rgba(0, 255, 136, 0.2);
-            box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
-            transform: translateY(-3px);
-        }
-        
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://user-gen-media-assets.s3.amazonaws.com/gemini_images/a2edac75-f5fa-48f1-b289-3a97c4a13d3a.png?rnd=1771200427868&utm_source=perplexity" alt="Musha_King Logo" class="logo">
-        
-        <h1>MUSHA_KING</h1>
-        <p class="tagline">Follow for Epic Gaming Content</p>
-        
-        <div class="channels">
-            <a href="https://www.youtube.com/@Musha_KingGaming" class="channel-link" target="_blank">📺 YouTube - Musha_KingGaming</a>
-            <a href="https://www.twitch.tv/Musha_King" class="channel-link" target="_blank">🎮 Twitch - Musha_King</a>
-            <a href="https://www.tiktok.com/@musha_king1?_r=1&_t=ZP-93xGpUKrkqt" class="channel-link" target="_blank">🎵 TikTok - Musha_King1</a>
-        </div>
-        
-        <div class="footer">
-            <p>Subscribe & Follow for Daily Gaming Content!</p>
-        </div>
+    <h1>Welcome to Musha King Gaming</h1>
+    <div id="content">
+        <p>Loading content...</p>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                // Simulate fetching content
+                const content = 'Here is the game information.';
+                document.getElementById('content').innerHTML = content;
+            } catch (error) {
+                console.error('Error occurred:', error);
+                document.getElementById('content').innerHTML = '<p class="error">An error occurred while loading content. Please try again later.</p>';
+            }
+        });
+    </script>
 </body>
 </html>
